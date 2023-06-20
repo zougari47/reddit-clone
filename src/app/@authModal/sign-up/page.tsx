@@ -1,5 +1,5 @@
 import CloseModal from '@/components/CloseModal'
-import SignIn from '@/components/SignIn'
+import SignUp from '@/components/SignUp'
 
 const Page = () => {
   return (
@@ -10,7 +10,7 @@ const Page = () => {
             <CloseModal />
           </div>
 
-          <SignIn />
+          <SignUp />
         </div>
       </div>
     </div>
