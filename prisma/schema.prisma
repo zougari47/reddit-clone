@@ -75,13 +75,12 @@ model Subreddit {
 }
 
 model Subscription {
-  user         User      @relation(fields: [userId], references: [id])
-  userId       String
-  subreddit    Subreddit @relation(fields: [subredditId], references: [id])
-  subbredditId String
-  subredditId  String
+  user        User      @relation(fields: [userId], references: [id])
+  userId      String
+  subreddit   Subreddit @relation(fields: [subredditId], references: [id])
+  subredditId String
 
-  @@id([userId, subbredditId])
+  @@id([userId, subredditId])
 }
 
 model Post {
