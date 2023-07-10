@@ -9,7 +9,7 @@ const CACHE_AFTER_UPVOTES = 1
 
 export async function PATCH(req: Request) {
   try {
-    const body = req.json()
+    const body = await req.json()
 
     const { postId, VoteType } = PostVoteValidator.parse(body)
 
