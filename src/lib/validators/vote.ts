@@ -8,8 +8,8 @@ export const PostVoteValidator = z.object({
 export type PostVoteRequest = z.infer<typeof PostVoteValidator>
 
 export const CommentVoteValidator = z.object({
-  postId: z.string(),
-  CommentType: z.enum(['UP', 'DOWN']),
+  commentId: z.string(),
+  voteType: z.enum(['UP', 'DOWN']),
 })
 
-export type CommentRequest = z.infer<typeof CommentVoteValidator>
+export type CommentVoteRequest = z.infer<typeof CommentVoteValidator>
