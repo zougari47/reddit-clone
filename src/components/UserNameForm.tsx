@@ -13,7 +13,7 @@ import {
   CardHeader,
   CardTitle,
 } from './ui/Card'
-import { Label } from './ui/Label'
+import { Label } from '@/components/ui/Label'
 import { Input } from './ui/Input'
 import { Button } from './ui/Button'
 import { useMutation } from '@tanstack/react-query'

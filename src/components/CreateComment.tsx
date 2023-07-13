@@ -1,7 +1,7 @@
 'use client'
 
 import { FC, useState } from 'react'
-import { Label } from './ui/Label'
+import { Label } from '@/components/ui/Label'
 import { Textarea } from './ui/Textarea'
 import { Button } from './ui/Button'
 import { useMutation } from '@tanstack/react-query'
